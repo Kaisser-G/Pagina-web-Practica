@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-rows: 300px 1fr 200px;
+    background-color: #b3d8d8;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-template-areas: "banner banner banner"
+                         "inicio bio canciones";
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: gray;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    position: relative;
+    top: 300px;
+}
+footer{
+    background-color: black;
+    bottom: 0;
+    right: 0;
+}
+h1
+{
+ color: red;
+ text-align: center;
+}
+p
+{
+    font-family: Arial;
+    width: 100%;
+}
+main{
+    width: 100%;
+}
+
+
+.banner {
+    grid-area: banner;
+}
+.inicio {
+    grid-area: inicio;
+}
+.bio {
+    grid-area: bio;
+}
+.canciones {
+    grid-area: canciones;
+}
+.menu {
+    background-color: lightblue;
+}
+.menu a{
+    text-decoration: none;
+    padding: 1em 11.8em;
+    text-align: center;
+    border: 2px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+/*
+.banner{
+    width: 100%;
+    background-color: black;
+}
+.banner img{
+    margin: 0 34%;
+}*/
+/*Menu sin ul*/
+/*
+.menu{
+    //list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    //float: left;
+    background-color: gray;
+}
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    //padding: 1em 11.8em;
+    //margin: 0;
+    width: 33%;
+    padding: 1em 0;
+    text-align: center;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.menu a:hover{
+    background-color: rgb(70, 70, 70);
+}
+*/
+
+/*Menu con ul*/
+/*
+.menu li{
+    float: left;
+    margin: 0 0.13em 0 0;
+    background-color: gray;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    padding: 1em 11.8em;
+    margin: 0;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.menu li a:hover{
+    background-color: rgb(70, 70, 70);
+}*/
+.foot {
+    font-weight: 400;
+}

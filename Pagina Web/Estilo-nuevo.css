@@ -1,0 +1,141 @@
+body {
+    display: grid;
+    grid-template-rows: 250px 1fr 100px;
+    background-color: rgb(12, 12, 59);
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+header {
+    /*position: fixed; pora hora no pq me jode toda la grilla*/
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "banner banner banner"
+                         "inicio bio canciones";
+    align-content: stretch;
+    /*justify-content: stretch;
+    justify-items: stretch;  */    
+    min-width: 500px;
+    top: 0;
+    right: 0;
+}
+
+/*                                  Menues                          */
+/*Inicio*/
+#inicio {
+    display: grid; /*Default*/
+    grid-template-rows: 2em 1fr 1fr;
+    background-color: rgb(0, 0, 0);
+}
+/*Biografia*/
+#bio {
+    display: none; /*Default*/
+}
+/*Canciones*/
+
+
+footer {
+    background-color: #ffa500;
+    text-align: center;
+    min-width: 500px;
+}
+
+/*Header*/
+.banner {
+    grid-area: banner;
+    justify-self: stretch;
+    align-self: stretch;
+    margin: 0;
+    background-color: black;
+    /*Provisional*/
+    color: white;
+    text-align: center;
+    padding: 1.7em 0;
+}
+.menu {
+    background-color: black;
+}
+a.menu {
+    text-decoration: none;
+    justify-self: stretch;
+    align-self: stretch;
+    padding: 1em;
+    text-align: center;
+    border: 2px solid white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+a.menu:hover {
+    background-color: rgba(204, 204, 204, 0.9);
+}
+/*Seleccion por defecto*/
+#btnInicio {
+    background-color: rgba(190, 119, 119, 0.9);
+}
+/*Fin Header*/
+
+/*Main*/
+    /*Inicio*/
+.news {
+    align-self: center;
+    justify-self: center;
+    width: 800px;
+    height: 300px;
+    margin-top: 50px;
+    border: 5px solid white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-width: 600px;
+}
+.art-main {
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0.7em;
+}
+.art-main h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+.art-main p {
+    margin-top: 0;
+}
+.descr {
+    margin: 2em;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+}
+    /* Fin Inicio*/
+
+    /*Biografia*/
+
+    /* Fin Biografia*/
+
+    /*Cacniones*/
+
+    /* Fin Cacniones*/
+
+/* Fin Main*/
+
+/* Footer */
+footer h3 {
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
